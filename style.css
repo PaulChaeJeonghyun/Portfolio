@@ -111,7 +111,7 @@ p {
    background-color: var(--color-git-grey);
    /* position:sticky;
    top:0; */
-   padding: 8px;
+   padding: 2px;
 }
 
 .navbar__menu {
