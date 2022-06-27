@@ -62,6 +62,8 @@ button {
    background-color: transparent;
    cursor: pointer;
    border: none;
+   outline:none;
+   padding:0;
 }
 
 /* Typography */
@@ -169,6 +171,10 @@ p {
    padding: 8px 12px;
    border: 2px solid var(--color-white);
    border-radius: var(--size-border-radius);
+}
+
+.home__contact:hover {
+   background-color: var(--color-pink);
 }
 
 /* Section common */
@@ -346,16 +352,17 @@ background-color: var(--color-grey);
 }
 
 .project__description h3 {
-   color: var(--color-white);
+   color: var(--color-orange);
 }
 
 .project__description h3:after {
    content: '';
-   width: 25px;
+   width: 50px;
    height: 2px;
    background-color: var(--color-white);
    display: block;
    position: relative;
+   transform: translateX(-50%);
    left: 50%;
    margin-left: -12px;
    margin-top: 8px;
@@ -437,6 +444,9 @@ background-color: var(--color-grey);
 @media screen and (max-width: 768px){
    .navbar__toggle-btn {
       display: block;
+      top: 8px;
+      right: 16px;
+      font-size: var(--font-medium);
    }
 
    #navbar {
@@ -460,12 +470,19 @@ background-color: var(--color-grey);
       display: block;
    }
 
+   .section {
+      padding: 16px;
+      padding-top: 40px;
+   }
+
    .about__majors {
       flex-direction: column;
+      margin-top: 30px;
+      margin-bottom: 0;
    }
 
    .major {
-      margin-bottom: 38px;
+      margin-bottom: 30px;
    }
 
    .skillset {
@@ -474,5 +491,14 @@ background-color: var(--color-grey);
 
    .project {
       flex-grow: 1;
+   }
+
+   .arrow__up {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      line-height: 50px;
+      right: 16px;
+      bottom: 16px;
    }
 }
